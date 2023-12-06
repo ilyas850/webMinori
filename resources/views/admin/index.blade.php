@@ -23,7 +23,7 @@
         <div class="row justify-content-center">
             <div class="col-md-6">
                 <div class="card">
-                    <div class="card-header">Jumlah Mobil</div>
+                    <div class="card-header">Jumlah Karyawan</div>
 
                     <div class="card-body">
                         @if (session('status'))
@@ -31,13 +31,13 @@
                                 {{ session('status') }}
                             </div>
                         @endif
-                        mobil
+                        {{ $karyawan }} Orang
                     </div>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="card">
-                    <div class="card-header">Jumlah Transaksi</div>
+                    <div class="card-header">Jumlah Training</div>
 
                     <div class="card-body">
                         @if (session('status'))
@@ -45,7 +45,7 @@
                                 {{ session('status') }}
                             </div>
                         @endif
-                        transaksi
+                        {{ $train }} Training
                     </div>
                 </div>
             </div>

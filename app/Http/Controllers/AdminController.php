@@ -18,7 +18,10 @@ class AdminController extends Controller
 {
     function index()
     {
-        return view('admin.index');
+        $karyawan = ProfilKaryawan::count();
+        $train = TrainingKaryawan::count();
+
+        return view('admin.index', compact('karyawan', 'train'));
     }
 
     function profilKaryawan(Request $request)
